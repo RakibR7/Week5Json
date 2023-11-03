@@ -34,7 +34,7 @@ public class FeignController {
 
         return "Total execution Time: "  + (endTime - startTime) + " ms";
     }
-    @GetMapping("/ToDos/")
+    @GetMapping("/todos/")
     public TodoResponse Todos() {
         //long startTime = System.currentTimeMillis();
 
