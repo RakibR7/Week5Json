@@ -10,6 +10,7 @@ public class BlockingController {
     public BlockingController(BlockingService blockingService){
         this.blockingService = blockingService;
     }
+
     @GetMapping("/blocking")
     public String getBlockingData() {
         long startTime = System.currentTimeMillis();
@@ -17,6 +18,7 @@ public class BlockingController {
             blockingService.fetchDataBlocking();
         }
         long endTime = System.currentTimeMillis();
-        return "Total execution time" + (endTime - startTime) + " ms";
+        return "Total execution time: " + (endTime - startTime) + " ms";
     }
 }
+

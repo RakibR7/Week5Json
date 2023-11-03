@@ -10,7 +10,6 @@ public class BlockingService {
     public BlockingService(RestTemplate restTemplate){this.restTemplate = restTemplate; }
 
     public String fetchDataBlocking() {
-        //simulate a delay of 2 seconds
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
