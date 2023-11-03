@@ -8,6 +8,6 @@ public interface TodoClient {
     @GetMapping("/todos/196")
     TodoResponse fetchData196();
 
-    @GetMapping("/todos/")
+    @GetMapping("/todos/1")
     TodoResponse fetchData();
 }
