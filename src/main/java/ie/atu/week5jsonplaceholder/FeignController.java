@@ -28,7 +28,7 @@ public class FeignController {
 
         CompletableFuture<Void> allOf = CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]));
 
-        //allOf.get();
+        allOf.get();
         long endTime = System.currentTimeMillis();
 
         return "Total execution Time: "  + (endTime - startTime) + " ms";
